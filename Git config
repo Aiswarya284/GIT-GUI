@@ -1,0 +1,52 @@
+Install GIT
+Open GIT BASH - terminal to interact with GIT
+Configure :
+	git config --global user.name "NAME"
+	git config --global user.email
+To create default branch 
+	 git config --global init.default branch main
+
+for help 
+	git config -h -----> information about configure
+	git help config ----> opens a manual hsoted on local computer
+
+clear 
+
+To track the files in directory - address of the file
+Change the directory to look at files 
+cd E:\Projects\RemoteIO -----------> not working in git bash 
+
+Power shell 
+change the directory to file location
+to change to GIT repository 
+use
+		git init
+		git status ---> shows tracked and untracked files
+
+To track a file 
+	git add //file name
+To untrack a file
+	git rm --cached //filename
+to add all file 
+	git add all or 
+	git add -A or 
+	git add.
+To ignore a file : create a new text document in the same directory and rename it as .gitignore
+All files are in an environment called STAGING
+To commit - snapshot of your repository at this point of time
+	git commit -m "message to be displayed for reference"
+when a file is modified but not commit then git status displays the modified file
+	git diff ------> shows what differences are made 
+to rename a file 
+	git mv "previous_filename" "new name"
+see history 
+	git log
+	git log --oneline
+
+Push local repository in the cloud 
+git remote add origin https://github.com/Aiswarya284/Local_git.git
+git branch -M main
+git push -u origin main
+git push --all (push all branch)
+
+https://github.com/Aiswarya284/new

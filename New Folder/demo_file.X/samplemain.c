@@ -14,7 +14,7 @@
 void deserialize(void);
 #define	ReadHoldingRegister 03
 unsigned int c,d,e;
-BYTE Input[]= {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x03,0x08,0x09,0x09,0x08};
+BYTE Input[]= {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x03,0x08,0x09,0x09};
 BYTE Output[25];
 
 //unsigned int pack[25];
@@ -35,22 +35,22 @@ parse1 parse;
 
 main(){
     deserialize();
-//    if(parse.FunctionCode == ReadHoldingRegister){
-//        Output[7] = parse.FunctionCode ;
-//        Output[8] = (char)(parse.NumberofRegister.Val * 2);
-//        Output[4] = 0X0;
-//        Output[5] = 0X3 + Output[8];
-//      
-//        for(a = 0;a<parse.NumberofRegister.Val;a++){
-//            b = a*2;
-//            Output[9+b]= Register[parse.StartAddress+a]/0x100;
-//            Output[10+b]= Register[parse.StartAddress+a]%0x100;
-//       }       
-//    }    
-//    length = sizeof(Output)/sizeof(Output[0]);
-//    for(i=0;i< length;i++){
-//    printf("%d",Output[i]);
-//    }  
+    if(parse.FunctionCode == ReadHoldingRegister){
+        Output[7] = parse.FunctionCode ;
+        Output[8] = (char)(parse.NumberofRegister.Val * 2);
+        Output[4] = 0X0;
+        Output[5] = 0X3 + Output[8];
+      
+        for(a = 0;a<parse.NumberofRegister.Val;a++){
+            b = a*2;
+            Output[9+b]= Register[parse.StartAddress+a]/0x100;
+            Output[10+b]= Register[parse.StartAddress+a]%0x100;
+       }       
+    }    
+    length = sizeof(Output)/sizeof(Output[0]);
+    for(i=0;i< length;i++){
+    printf("%d",Output[i]);
+    }  
 }
   
 void deserialize (void){

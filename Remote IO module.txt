@@ -1,0 +1,10 @@
+1. ATOP - https://www.atoponline.com/industrial-networking-computing/products/interoperability/industrial-remote-io/io5202/
+2. ODOT -  www.odotautomation.com
+3. http://radix.co.in/families/analog-input-modules?gad_source=1
+4. https://www.solidotech.com/en/products/slice
+5. https://www.redlion.net/products/industrial-automation/controllers-and-data-acquisition/io-modules/e3-io-modules
+6. https://www.teracomsystems.com/ethernet/
+7. https://www.autonics.com/series/3000907
+8. https://www.turck.in/en/hazardous-area-remote-io-529.php
+9. https://www.moxa.com/en/products/industrial-edge-connectivity/controllers-and-ios/universal-controllers-and-i-os
+10. https://www.messungautomation.co.in/products/remote-io-canopen/
