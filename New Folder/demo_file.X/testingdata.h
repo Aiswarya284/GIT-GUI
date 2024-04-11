@@ -40,7 +40,7 @@ typedef struct
   
 } WORD_VAL1, WORD_BITS1;
 
-void modbuserror(parse1*parse, BYTE *ModbusTcpTxBuf, unsigned char exceptioncode);
+void modbuserror(parse1 *parse, BYTE *ModbusTcpTxBuf, unsigned char exceptioncode);
 
 
 

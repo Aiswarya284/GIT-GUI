@@ -36,10 +36,11 @@ unsigned int bytes;
 WORD
 ReadHoldingRegisters (BYTE *ModbusTcpTxBuf, WORD *DataRegister, parse1 *parse)
 {
+  
    if((parse->StartAddress.Val > ((int)(DataRegistersize) - 1)) ||
         ((parse->StartAddress.Val - 1 + parse->NumberofRegister.Val) > (int)(DataRegistersize)))
     {
-        modbuserror(&parse, &ModbusTcpTxBuf[0],Illegal_Data_Address);
+        modbuserror(parse, &ModbusTcpTxBuf[0],Illegal_Data_Address);
         return;
         
     }
